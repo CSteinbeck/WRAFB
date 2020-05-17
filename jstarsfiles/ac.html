@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+
+
+
+<form action="acForm.php" method="post">
+<div class="container">
+    <h1>Form 18 - AC</h1>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Date" name="DATE">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="MSN#" name="MSN">
+    </div>
+        <div class="col">
+      <input type="text" class="form-control" placeholder="AC" name="AC">
+    </div>
+        <div class="col">
+      <input type="text" class="form-control" placeholder="MCC" name="MCC">
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Tail# - sched" name="tail">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Actual" name="actual">
+    </div>
+
+        <div class="col">
+      <button type="button" class="btn btn-primary">Live</button>
+      <button type="button" class="btn btn-primary">Sim</button>
+      <button type="button" class="btn btn-primary">Offboard White Force</button>
+    </div>
+  </div>
+
+
+
+
+            <div class="p-3 mb-2 bg-secondary text-white">
+        <p class="text-center">LIVE RAP EVENTS COMPLETED</p>
+
+        </div>
+                        <p>Flight Deck</p>
+        
+        <div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" name="checkbox1">
+  <label class="form-check-label" for="inlineCheckbox1">Night Lndg</label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" name="checkbox2">
+  <label class="form-check-label" for="inlineCheckbox2">3-Eng Landing</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1" name="checkbox3">
+  <label class="form-check-label" for="inlineCheckbox3">Cmbt Trng Sortie</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2" name="checkbox4">
+  <label class="form-check-label" for="inlineCheckbox4">A/P-off Refueling</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1" name="checkbox5">
+  <label class="form-check-label" for="inlineCheckbox5">AR</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2" name="checkbox6">
+  <label class="form-check-label" for="inlineCheckbox6">Night AR</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option1" name="checkbox7">
+  <label class="form-check-label" for="inlineCheckbox7">Retrograde</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="option2" name="checkbox8">
+  <label class="form-check-label" for="inlineCheckbox8">TAAD</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="option1" name="checkbox9">
+  <label class="form-check-label" for="inlineCheckbox9">ASA</label>
+</div>
+<br>
+
+
+            <div class="p-3 mb-2 bg-secondary text-white">
+        <p class="text-center">Flight Deck Comments</p>
+
+
+    <textarea class="form-control" id="FlightDeckComments" rows="10" name="comments"></textarea>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <a class="btn btn-primary" href="/" role="button">Back to Landing Page</a>
+</div>
+</div>
+</form>
+
+</body>
+</html>
+
+

@@ -1,0 +1,32 @@
+body {
+	background-color: #234f96;
+	background-image: url(jstarsBase.jpg);
+}
+header {
+	background-image: url(jstarsBackground.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 30px;
+	color: white;
+	border: 10px solid white;
+}
+.siteheader {
+	margin: auto;
+	font-size: 5vw;
+}
+button {
+	margin: auto;
+	width: 90%;
+	font-size: 2vw;
+}
+button:hover {
+	font-weight: bolder;
+}
+.blockstyle {
+	background-color: lightblue;
+	width: 90%;
+	margin: auto;
+	padding: 5px;
+	display: none;
+}

@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="main.js"></script>
+
+    
+    <script type="text/javascript">
+        function findTotal(){
+        var arr = document.getElementsByName('qty');
+        var tot=0;
+        for(var i=0;i<arr.length;i++){
+            if(parseInt(arr[i].value))
+                tot += parseInt(arr[i].value);
+        }
+        document.getElementById('PPTotal').value = tot;
+    }
+    </script>
+    <script type="text/javascript">
+        function findTotal1(){
+            var arr = document.getElementsByName('qty1');
+            var tot=0;
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i].value))
+                    tot += parseInt(arr[i].value);
+            }
+    document.getElementById('PITotal').value = tot;
+    }
+    </script>
+    <script type="text/javascript">
+        function findTotal2(){
+            var arr = document.getElementsByName('qty2');
+            var tot=0;
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i].value))
+                    tot += parseInt(arr[i].value);
+            }
+    document.getElementById('PETotal').value = tot;
+    }
+    </script>
+    <script type="text/javascript">
+        function findTotal3(){
+            var arr = document.getElementsByName('qty3');
+            var tot=0;
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i].value))
+                    tot += parseInt(arr[i].value);
+            }
+    document.getElementById('NEPTotal').value = tot;
+    }
+    </script>
+    <script type="text/javascript">
+        function findTotal4(){
+            var arr = document.getElementsByName('qty4');
+            var tot=0;
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i].value))
+                    tot += parseInt(arr[i].value);
+            }
+    document.getElementById('NEITotal').value = tot;
+    }
+    </script>
+    <script type="text/javascript">
+        function findTotal5(){
+            var arr = document.getElementsByName('qty5');
+            var tot=0;
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i].value))
+                    tot += parseInt(arr[i].value);
+            }
+    document.getElementById('NEETotal').value = tot;
+    }
+    </script>
+
+<body>
+
+<!--  This first form is for the basic info (Date,MSN#,etc.)-->
+<form>
+<div class="container">
+    <h1>Form 18 - MCC</h1>
+  <div class="row">
+    <div class="col">
+      <input id="date" type="text" class="form-control" placeholder="Date">
+    </div>
+    <div class="col">
+      <input id="msn#" type="text" class="form-control" placeholder="MSN#">
+    </div>
+        <div class="col">
+      <input id="AC" type="text" class="form-control" placeholder="AC">
+    </div>
+        <div class="col">
+      <input id="MCC" type="text" class="form-control" placeholder="MCC">
+    </div>
+  </div>
+  </div>
+</form>
+<br>
+<form>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <input id="tail#" type="text" class="form-control" placeholder="Tail# - sched">
+    </div>
+    <div class="col">
+      <input id="actual" type="text" class="form-control" placeholder="Actual">
+    </div>
+    <span>
+    <div class="col">
+    <span>
+        <input id="Live" name="Radios" type="radio" value="Option 1" checked="checked">
+        <label for="Live">Live</label>
+    </span>
+    </div>
+    <div class="col">
+        <span>
+        <input id="Sim" name="Radios" type="radio" value="Option 2" >
+        <label for="Sim">Sim</label>
+        </span>
+    </div>
+    <div class="col">
+        <span>
+        <input id="OffBoardWF" name="Radios" type="radio" value="Option 3" >
+        <label for="OffBoardWF">Offboard White Force</label>
+        </span>
+    </div>
+    </span>
+  </div>
+  </div>
+</form>
+
+        
+
+
+<br>
+<div class="container">
+    <div class="p-3 mb-2 bg-secondary text-white">
+        <p class="text-center">MISSION INFORMATION</p>
+        </div>
+</div>
+<br>
+
+
+<form>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <input id="exerciseName" type="text" class="form-control" placeholder="Exercise/Scenario Name">
+    </div>
+    <div class="col">
+      <input id="overallRap" type="text" class="form-control" placeholder="Overall RAP Value (See Instructions)">
+    </div>
+   
+<div class="custom-control custom-radio custom-control-inline">
+	<p>
+    Effective:
+  </p>
+</div>
+
+<!-- Default inline 1-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input id="EffectiveY" type="radio" class="custom-control-input" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline1">Yes</label>
+</div>
+
+<!-- Default inline 2-->
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" class="custom-control-input" id="EffectiveN" name="inlineDefaultRadiosExample">
+  <label class="custom-control-label" for="defaultInline2">No</label>
+</div>
+
+
+
+   </div>
+  </div>
+</form>
+<br>
+<form>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <input id="ExerciseObjectives" type="text" class="form-control" placeholder="Exercise/Mission Objectives:">
+    </div>
+  </div>
+  </div>
+</form>
+<br>
+<div class="container">
+        <div class="p-3 mb-2 bg-secondary text-white">
+        <p class="text-center">LIVE RAP EVENTS COMPLETED</p>
+        </div>
+<form id="frmCareer" method="get" action="prjFormEvent.js">
+<table id="tblCareer">
+
+<tr>
+    <td>
+        <div id="realisticTotal"></div>
+        
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic1">Night Lndg
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic2">3-Eng Landing
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic3">Cmbt Trng Sortie
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic4">A/P-off Refuling
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic5">AR
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic6">Night AR
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic7">Retrograde
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic8">TAAD
+        <input class="LiveRapCheck" type="checkbox"
+            name="chkRealistic"
+            onclick="getRealistic()"
+            value="chkRealistic9">ASA
+        <br>
+        <div class="mx-auto">
+                <strong>
+                    <label id="lblRealistic">Total Flight Deck Events
+                    </label>
+              </strong>
+        </div>
+    </td>
+</tr>
+
+</table>
+</form>
+</div>
+
+<!-- This is the two massive input forms (TIMING and Crew Training)--> 
+
+<div class="container">
+<br>
+  <div class="row">
+    <div class="col-md">
+        <div class="p-3 mb-2 bg-secondary text-white text-center">TIMING (ALL TIMES IN ZULU)</div>
+        <table class="table table-striped">
+          <thead>
+            <tr >
+              <th scope="col">EVENT</th>
+              <th scope="col">Schedueled</th>
+              <th scope="col">Actual</th>
+              <th scope="col">Dur</th>
+              <th scope="col">Location</th>
+              <th scope="col">Fuel</th>
+              <th scope="col">Unit/Tail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">T/O</th>
+              <td>
+                  <input id="tSchedu" type="text" class="form-control" placeholder="Schedu">
+              </td>
+              <td>
+                  <input id="tActual" type="text" class="form-control" placeholder="Actual">
+              </td>
+              <td>
+                  <input id="tDuration" type="text" class="form-control" placeholder="Duration">
+              </td>
+              <td>
+                  <input id="tLocation" type="text" class="form-control" placeholder="Location">
+              </td>
+              <td>
+                  <input id="tFuel" type="text" class="form-control" placeholder="Fuel">
+              </td>    
+              <td>
+                  <input id="tUnit" type="text" class="form-control" placeholder="Unit/Trial">
+              </td>              
+            </tr>
+            <tr>
+              <th scope="row">A/R</th>
+              <td>
+                  <input id="aSchedu" type="text" class="form-control" placeholder="Schedu">
+              </td>
+              <td>
+                  <input id="aActual" type="text" class="form-control" placeholder="Actual">
+              </td>
+              <td>
+                  <input id="aDuration" type="text" class="form-control" placeholder="Duration">
+              </td>
+              <td>
+                  <input id="aLocation" type="text" class="form-control" placeholder="Location">
+              </td>
+              <td>
+                  <input id="aFuel" type="text" class="form-control" placeholder="Fuel">
+              </td>    
+              <td>
+                  <input id="aUnit" type="text" class="form-control" placeholder="Unit/Trial">
+              </td>              
+
+            </tr>
+            <tr>
+              <th scope="row">Station On</th>
+              <td>
+                  <input id="sonSchedu" type="text" class="form-control" placeholder="Schedu">
+              </td>
+              <td>
+                  <input id="sonActual" type="text" class="form-control" placeholder="Actual">
+              </td>
+              <td>
+                  <input id="sonDuration" type="text" class="form-control" placeholder="Duration">
+              </td>
+              <td>
+                  <input id="sonLocation" type="text" class="form-control" placeholder="Location">
+              </td>
+              <td>
+                  <input id="sonFuel" type="text" class="form-control" placeholder="Fuel">
+              </td>    
+              <td>
+                  <input id="sonUnit" type="text" class="form-control" placeholder="Unit/Trial">
+              </td>              
+
+            </tr>
+            <tr>
+              <th scope="row">Station Off</th>
+ <td>
+                  <input id="soffSchedu" type="text" class="form-control" placeholder="Schedu">
+              </td>
+              <td>
+                  <input id="soffActual" type="text" class="form-control" placeholder="Actual">
+              </td>
+              <td>
+                  <input id="soffDuration" type="text" class="form-control" placeholder="Duration">
+              </td>
+              <td>
+                  <input id="soffLocation" type="text" class="form-control" placeholder="Location">
+              </td>
+              <td>
+                  <input id="soffFuel" type="text" class="form-control" placeholder="Fuel">
+              </td>    
+              <td>
+                  <input id="soffUnit" type="text" class="form-control" placeholder="Unit/Trial">
+              </td>              
+
+            </tr>
+            <tr>
+              <th scope="row">Station Land</th>
+ <td>
+                  <input id="slSchedu" type="text" class="form-control" placeholder="Schedu">
+              </td>
+              <td>
+                  <input id="slActual" type="text" class="form-control" placeholder="Actual">
+              </td>
+              <td>
+                  <input id="slDuration" type="text" class="form-control" placeholder="Duration">
+              </td>
+              <td>
+                  <input id="slLocation" type="text" class="form-control" placeholder="Location">
+              </td>
+              <td>
+                  <input id="slFuel" type="text" class="form-control" placeholder="Fuel">
+              </td>    
+              <td>
+                  <input id="slUnit" type="text" class="form-control" placeholder="Unit/Trial">
+              </td>              
+
+            </tr>
+            <tr>
+              <th scope="row">Pattern Time</th>
+ <td>
+                  <input id="ptSchedu" type="text" class="form-control" placeholder="Schedu">
+              </td>
+              <td>
+                  <input id="ptActual" type="text" class="form-control" placeholder="Actual">
+              </td>
+              <td>
+                  <input id="ptDuration" type="text" class="form-control" placeholder="Duration">
+              </td>
+              <td>
+                  <input id="ptLocation" type="text" class="form-control" placeholder="Location">
+              </td>
+              <td>
+                  <input id="ptFuel" type="text" class="form-control" placeholder="Fuel">
+              </td>    
+              <td>
+                  <input id="ptUnit" type="text" class="form-control" placeholder="Unit/Trial">
+              </td>              
+
+            </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+<!-- This is where the Crew Training numeric form begins-->
+<div class="container">
+    <div class="table-responsive">
+        <div class="p-3 mb-2 bg-secondary text-white text-center">CREW TRAINING</div>
+        <table class="table table-bordered table-responsive-sm">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">POSITION</th>
+              <th colspan="3" class="text-center"># Planned</th>
+              <th colspan="3" class="text-center"># Non-Effective</th>
+
+            </tr>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" class="text-center">P</th>
+                <th scope="col" class="text-center">I</th>                
+                <th scope="col" class="text-center">E</th>
+                <th scope="col" class="text-center">P</th>
+                <th scope="col" class="text-center">I</th>
+                <th scope="col" class="text-center">E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-center">AC</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPACqty" name="qty"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIACqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEACqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPACqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIACqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEACqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row" class="text-center">CP</th>
+              <td>  
+                     <input onblur="findTotal()" type="number" id="PPCPqty" name="qty"
+                     min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PICPqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PECPqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPCPqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEICPqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEECPqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            
+            <tr>
+              <th scope="row" class="text-center">CSO</th>
+              
+              <td>
+                     <input onblur="findTotal()" type="number" id="PPCSOqty" name="qty"
+                     min="0" max="999">
+              <td>
+                <input onblur="findTotal1()" type="number" id="PICSOqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PECSOqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPCSOqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEICSOqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEECSOqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">FE</th>
+              
+              <td>
+                     <input onblur="findTotal()" type="number" id="PPFEqty" name="qty"
+                     min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIFEqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEFEqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPFEqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIFEqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEFEqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">MCC</th>
+              <td>
+                    <input onblur="findTotal()" type="number" id="PPMCCqty" name="qty"
+                    min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIMCCqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEMCCqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPMCCqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIMCCqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEMCCqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">DMCC</th>
+              <td>
+                    <input onblur="findTotal()" type="number" id="PPDMCCqty" name="qty"
+                    min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIDMCCqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEDMCCqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPDMCCqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIDMCCqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEDMCCqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">SD</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPDSqty" name="qty"
+                min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PISDqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PESDqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPSDqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEISDqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEESDqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">AWO</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPAWOqty" name="qty"
+                min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIAWOqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEAWOqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPAWOqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIAWOqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEAWOqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">CST</th>
+              <td>                
+                <input onblur="findTotal()" type="number" id="PPCSTqty" name="qty"
+                min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PICSTqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PECSTqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPCSTqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEICSTqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEACqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">AMSS</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPAMSSqty" name="qty"
+                 min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIAMSSqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEAMSSqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPAMSSqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIAMSSqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEAMSSqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">AIO/AIT</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPAIOqty" name="qty"
+                 min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIAIOqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEAIOqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPAUIqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIAIOqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEAIOqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">SSM</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPSSMqty" name="qty"
+                 min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PISSMqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PESSMqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPSSMqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEISSMqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEESSMqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">AOT</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPAOTqty" name="qty"
+                 min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIAOTqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEAOTqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPAOTqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIAOTqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEAOTqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-center">ATSS</th>
+              <td>
+                <input onblur="findTotal()" type="number" id="PPATSSqty" name="qty"
+                 min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal1()" type="number" id="PIATSSqty" name="qty1"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal2()" type="number" id="PEATSSqty" name="qty2"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal3()" type="number" id="NEPATSSqty" name="qty3"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal4()" type="number" id="NEIATSSqty" name="qty4"
+                       min="0" max="999">
+              </td>
+              <td>
+                <input onblur="findTotal5()" type="number" id="NEEATSSqty" name="qty5"
+                       min="0" max="999">
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" align="center">Total:</td>
+            <td> <input type="number" name="total" id="PPTotal"/></td>
+            <td> <input type="number" name="total" id="PITotal" /></td>
+            <td> <input type="number" name="total" id="PETotal"/></td>
+            <td> <input type="number" name="total" id="NEPTotal"/></td>
+            <td> <input type="number" name="total" id="NEITotal"/></td>  
+            <td> <input type="number" name="total" id="NEETotal"/></td>  
+          </tr>
+          </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- This is the Live Activity Conectivity section -->
+<div class="container">
+<br>
+  <div class="row">
+    <div class="col-md">
+        <div class="p-3 mb-2 bg-secondary text-white text-center">LIVE ACTIVITY Connectivity</div>
+        <table class="table table-striped">
+          <thead>
+            <tr >
+              <th scope="col">Unit</th>
+              <th scope="col">Type</th>
+              <th scope="col">AC/JTAC/TGS/ Etc. Callsign</th>
+              <th scope="col">Radio Comm</th>
+              <th scope="col">Link 16</th>
+              <th scope="col">IRC-</th>
+              <th scope="col">SCDL</th>
+              <th scope="col">4607</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                  <input id="unit1" type="text" class="form-control" placeholder="Unit">
+              </td>
+              <td>
+                  <input id="type1" type="text" class="form-control" placeholder="# / Type">
+              </td>
+              <td>
+                  <input id="Callsign1" type="text" class="form-control" placeholder="AC/JTAC/TGS/Ect. Callsign">
+              </td>
+              <td>
+                <form action="">
+                  <input id="RadioComm1Y" type="radio" name="RadioComm1" value="Yes"> Y
+                  <br>
+                  <input id="RadopComm1N" type="radio" name="RadioComm1" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input id="Link16Y" type="radio" name="Link16-1" value="Yes"> Y
+                  <br>
+                  <input id="Link16N" type="radio" name="Link16-1" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input id="IRC1Y" type="radio" name="IRC1" value="Yes"> Y
+                  <br>
+                  <input id="IRC1N" type="radio" name="IRC1" value="No"> N
+                </form>
+              <td>
+                <form action="">
+                  <input id="SCDL1Y" type="radio" name="SCDL1" value="Yes"> Y
+                  <br>
+                  <input id="SCDL1N" type="radio" name="SCDL1" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input id="4607-1Y" type="radio" name="4607-1" value="Yes"> Y
+                  <br>
+                  <input id="4607-1N" type="radio" name="4607-1" value="No"> N
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <input id="Unit2" type="text" class="form-control" placeholder="Unit">
+              </td>
+              <td>
+                  <input id="type2" type="text" class="form-control" placeholder="# / Type">
+              </td>
+              <td>
+                  <input id="Callsign2" type="text" class="form-control" placeholder="AC/JTAC/TGS/Ect. Callsign">
+              </td>
+              <td>
+                <form action="">
+                  <input id="RadioComm2Y" type="radio" name="RadioComm2" value="Yes"> Y
+                  <br>
+                  <input id="Radiocomm2N" type="radio" name="RadioComm2" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input id="Link16-2Y" type="radio" name="Link16-2" value="Yes"> Y
+                  <br>
+                  <input id="Link16-2N" type="radio" name="Link16-2" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input id="IRC2Y" type="radio" name="IRC2" value="Yes"> Y
+                  <br>
+                  <input id="IRC2N" type="radio" name="IRC2" value="No"> N
+                </form>
+              </td>       
+              <td>
+                <form action="">
+                  <input id="SCDL2Y" type="radio" name="SCDL2" value="Yes"> Y
+                  <br>
+                  <input id="SCDL2N" type="radio" name="SCDL2" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input id="4607-2Y" type="radio" name="4607-2" value="Yes"> Y
+                  <br>
+                  <input id="4607-2N" type="radio" name="4607-2" value="No"> N
+                </form>
+              </td>             
+
+            </tr>
+            <tr>
+              <td>
+                  <input type="text" class="form-control" placeholder="Unit">
+              </td>
+              <td>
+                  <input type="text" class="form-control" placeholder="# / Type">
+              </td>
+              <td>
+                  <input type="text" class="form-control" placeholder="AC/JTAC/TGS/Ect. Callsign">
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="RadioComm3" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="RadioComm3" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="Link16-3" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="Link16-3" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="IRC3" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="IRC3" value="No"> N
+                </form>
+              </td>      
+              <td>
+                <form action="">
+                  <input type="radio" name="SCDL3" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="SCDL3" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="4607-3" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="4607-3" value="No"> N
+                </form>
+              </td>              
+
+            </tr>
+            <tr>
+              <td>
+                  <input type="text" class="form-control" placeholder="Unit">
+              </td>
+ <td>
+                  <input type="text" class="form-control" placeholder="# / Type">
+              </td>
+              <td>
+                  <input type="text" class="form-control" placeholder="AC/JTAC/TGS/Ect. Callsign">
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="RadioComm4" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="RadioComm4" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="Link16-4" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="Link16-4" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="IRC4" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="IRC4" value="No"> N
+                </form>
+              <td>
+                <form action="">
+                  <input type="radio" name="SCDL4" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="SCDL4" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="4607-4" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="4607-4" value="No"> N
+                </form>
+              </td>              
+
+            </tr>
+            <tr>
+              <td>
+                  <input type="text" class="form-control" placeholder="Unit">
+              </td>
+        <td>
+                  <input type="text" class="form-control" placeholder="# / Type">
+              </td>
+              <td>
+                  <input type="text" class="form-control" placeholder="AC/JTAC/TGS/Ect. Callsign">
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="RadioComm5" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="RadioComm5" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="Link16-5" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="Link16-5" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="IRC5" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="IRC5" value="No"> N
+                </form>
+              </td>      
+              <td>
+                <form action="">
+                  <input type="radio" name="SCDL5" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="SCDL5" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="4607-5" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="4607-5" value="No"> N
+                </form>
+              </td>              
+
+            </tr>
+            <tr>
+              <td>
+                  <input type="text" class="form-control" placeholder="Unit">
+              </td>
+ <td>
+                  <input type="text" class="form-control" placeholder="# / Type">
+              </td>
+              <td>
+                  <input type="text" class="form-control" placeholder="AC/JTAC/TGS/Ect. Callsign">
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="RadioComm6" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="RadioComm6" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="Link16-6" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="Link16-6" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="IRC6" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="IRC6" value="No"> N
+                </form>
+              </td>     
+              <td>
+                <form action="">
+                  <input type="radio" name="SCDL6" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="SCDL6" value="No"> N
+                </form>
+              </td>
+              <td>
+                <form action="">
+                  <input type="radio" name="4607-6" value="Yes"> Y
+                  <br>
+                  <input type="radio" name="4607-6" value="No"> N
+                </form>
+              </td>             
+
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+<button type="submit" class="btn btn-primary">Submit</button>
+<a class="btn btn-primary" href="/" role="button">Back to Landing Page</a>
+</div>
+
+
+</body>
+</html>
+
