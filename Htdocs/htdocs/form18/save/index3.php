@@ -58,42 +58,26 @@ if (isset($_GET["logout"]))
 }
 
 
-if (!isset($_SESSION["user"]))
+	if (!isset($_SESSION["user"]))
 	{
 ?>
 		<h2 style="margin: auto; text-align: center; color: white; font-size: 3.5vw"><a href=".." alt="Return to Main">Please Login to JSTARS Sortie Site</a></h2>
 
 <?php
-		die();
 	}
 	else
 	{
 	   echo '<a style="color:white; background-color:black; float:right;" href=".?logout=true">Logout</a><br>';
 	   echo '<a style="color:white; background-color:black; float:right;" href="..">Main</a><br>';
+	   if ($_SESSION["user"] == "jstars")
+		   echo ' &nbsp; &nbsp; <a style="color:white; background-color:black; float:right;" href="createUser.php">Create New Account</a>';
 	   echo "<h2 style='margin:auto; text-align:center; color:white; font-size: 3.5vw;'>Welcome " . $_SESSION["fullname"] . "!</h2><br>";
-	}
-
-if (!isset($_POST["msn"]))
-{
 ?>
-<p style="text-align:center; color:white;">MSN# <form action="index.php" method="post"><input id="msnInputBox" type="text" name="msn"/> <input type="submit"  style="width:20%;" value="Load Form 18"/></form>
+
+<p style="text-align:center; color:white;">MSN# <input id="msnInputBox" type="text" name="msn"/> <button style="width:20%;" onclick="document.getElementById('msnInputBox').readOnly=true; document.getElementById('groupof4').style.display='block'; this.style.display='none';" >Load Form 18</button>
 </p>
-<?php
-}
-else
-{
-	$sql = "INSERT INTO Form18MSN  (UID, Date, MSN) VALUES ('$_SESSION[uid]', NOW(), '$_POST[msn]')";
-	if ($con->query($sql) === TRUE)
-		echo "MSN has been saved.";
-	else
-		echo "MSN FAILED to save.";
 
-	$_SESSION['msn'] = $_POST['msn'];
-
-	echo "<p style='text-align:center; color:white;'>MSN# ". $_SESSION['msn'] . "</p>";
-?>
-
-<div id="groupof4" style="display:block; text-align: center;">
+<div id="groupof4" style="display:none; text-align: center;">
 <br>
 
 <button onclick="showhide('mccdiv');" style="color:white; font-weight: bolder; background-color:DarkOrange; font-size:2vw;">MCC</button><br>
